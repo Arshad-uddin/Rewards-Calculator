@@ -5,7 +5,6 @@ const fetchTransactions = () => {
     setTimeout(() => {
       resolve([
         { customer: "Arshad", amount: 120, date: "2024-01-10" },
-        { customer: "Arshad", amount: 75, date: "2024-01-20" },
         { customer: "Teja", amount: 200, date: "2024-01-15" },
         { customer: "Arshad", amount: 90, date: "2024-02-05" },
         { customer: "Teja", amount: 130, date: "2024-02-17" },
