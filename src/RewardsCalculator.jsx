@@ -20,20 +20,22 @@ const fetchTransactions = () => {
 const calculatePoints = (amount) => {
   let points = 0;
   if (amount > 100) {
-    points += 2 * (amount - 100) + 50;
-  } else if (amount > 50) {
-    points += amount - 50;
+    points = 2 * (amount - 100) + 50;
+  } else if (amount > 50 && amount <= 100) {
+    points = amount - 50;
+
   }
+    console.log(points,amount, 'points')
   return points;
 };
 
 const groupByCustomerAndMonth = (transactions) => {
   const rewards = {};
 
-  transactions.forEach(({ customer, amount, date }) => {
+  transactions?.forEach(({ customer, amount, date }) => {
     const month = date.substring(0, 7); // YYYY-MM format
     const points = calculatePoints(amount);
-
+    console.log(points,'points12')
     if (!rewards[customer]) {
       rewards[customer] = {};
     }
@@ -56,7 +58,7 @@ const RewardsCalculator = () => {
       setRewards(groupByCustomerAndMonth(data));
     });
   }, []);
-
+  console.log(rewards, 'points2')
   return (
     <div className="p-4">
       <h2 className="text-xl font-bold mb-4">Customer Rewards Program</h2>
