@@ -4,15 +4,15 @@ const fetchTransactions = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve([
-        { customer: "Alice", amount: 120, date: "2024-01-10" },
-        { customer: "Alice", amount: 75, date: "2024-01-20" },
-        { customer: "Bob", amount: 200, date: "2024-01-15" },
-        { customer: "Alice", amount: 90, date: "2024-02-05" },
-        { customer: "Bob", amount: 130, date: "2024-02-17" },
-        { customer: "Charlie", amount: 50, date: "2024-02-20" },
-        { customer: "Alice", amount: 110, date: "2024-03-01" },
-        { customer: "Charlie", amount: 80, date: "2024-03-15" },
-        { customer: "Bob", amount: 150, date: "2024-03-25" },
+        { customer: "Arshad", amount: 120, date: "2024-01-10" },
+        { customer: "Arshad", amount: 75, date: "2024-01-20" },
+        { customer: "Teja", amount: 200, date: "2024-01-15" },
+        { customer: "Arshad", amount: 90, date: "2024-02-05" },
+        { customer: "Teja", amount: 130, date: "2024-02-17" },
+        { customer: "Naresh", amount: 50, date: "2024-02-20" },
+        { customer: "Arshad", amount: 110, date: "2024-03-01" },
+        { customer: "Naresh", amount: 80, date: "2024-03-15" },
+        { customer: "Teja", amount: 150, date: "2024-03-25" },
       ]);
     }, 1000);
   });
